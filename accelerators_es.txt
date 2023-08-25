@@ -1,0 +1,45 @@
+Ctrl+N: nueva forma
+Ctrl+O: abre archivo DFM
+Ctrl+Shift+C: conversion masiva (bin<>txt-dfm)
+Ctrl+R: carga recursos
+
+Ctrl+B: cambia a forma binaria
+Ctrl+S: guarda en archivo DFM
+Ctrl+Alt+S: guarda salida
+Ctrl+Shift+S: guarda a archivo binario
+Ctrl+U: crea archivo pas (unit)
+
+Ctrl+P: previo de la forma
+Ctrl+Shift+P: visualiza forma usando salida existente
+Ctrl+H: toggle "muestra lo oculto"
+Ctrl+E: toggle "habilita controles"
+
+Ins: agrega objeto
+Ctrl+Ins: agrega propiedad
+Shift+Ins: agrega entrada
+Enter: edita
+Delete: borra
+
+Ctrl+Up: mueve arriba
+Ctrl+Down: mueve abajo
+Ctrl+Shift+Up: mueve primero
+Ctrl+Shift+Down: mueve ultimo
+
+Ctrl+I: actualizacion en internet
+
+F1: muestra ayuda
+Shift+F1: muestra Acerca de
+
+Ctrl+Alt+O: dialogo de preferencias
+
+F3: busca de nuevo
+Ctrl+A: marca todo el texto en el memo
+
+En Previo:
+Ctrl+C: copia Control marcado
+Ctrl+X: quita Control marcado
+Ctrl+V: pega Control copiado o pegado
+
+En Inspector de objetos:
+Enter: fija valor en la propiedad
+Esc: restablece valor en la propiedad
