@@ -5,6 +5,8 @@
 
 
 # DFM-Editor #
+(c) 2006 Frank Wunderlich
+- [Страница проекта](https://sourceforge.net/projects/dfmedit/)
 
 Автономный редактор файлов форм Delphi (*.dfm) как в двоичном, так и в текстовом формате. Cовместим со всеми инструментами разработки Borland/Codegear/Embarcadero (Delphi, Builder, BDS, RAD).
 
