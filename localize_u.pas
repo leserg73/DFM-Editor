@@ -60,9 +60,9 @@ var i,j:integer;
     ini:Tinifile;
     s,cname:string;
 begin
-  if FileExists(extractfilepath(paramstr(0))+lng_prefix+langID+'.lng') then
+  if FileExists(extractfilepath(paramstr(0))+lng_dir+lng_prefix+langID+'.lng') then
   begin
-    ini:=Tinifile.create(extractfilepath(paramstr(0))+lng_prefix+langID+'.lng');
+    ini:=Tinifile.create(extractfilepath(paramstr(0))+lng_dir+lng_prefix+langID+'.lng');
     s:=ini.ReadString('Main','Font','');
     if s<>'' then form.Font.Name:=s;
     s:=ini.ReadString('Main','Charset','DEFAULT_CHARSET');
@@ -169,7 +169,7 @@ function localizeString(value:string):string;
 var ini:Tinifile;
     s:string;
 begin
-  ini:=Tinifile.create(extractfilepath(paramstr(0))+lng_prefix+cfg.language+'.lng');
+  ini:=Tinifile.create(extractfilepath(paramstr(0))+lng_dir+lng_prefix+cfg.language+'.lng');
   s:=convertLineBreak(ini.ReadString('Strings',value,''));
   if s='' then
   begin

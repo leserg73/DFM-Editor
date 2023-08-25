@@ -592,9 +592,9 @@ begin
   Application.OnException := AppException;
   Application.OnMessage:=AppMessage;
   ConfFile:=extractfilepath(paramstr(0))+_ConfFile;
-  CompFile:=extractfilepath(paramstr(0))+_CompFile;
-  PropFile:=extractfilepath(paramstr(0))+_PropFile;
-  UnwantedFile:=extractfilepath(paramstr(0))+_UnwantedFile;
+  CompFile:=extractfilepath(paramstr(0))+_obj_dir+_CompFile;
+  PropFile:=extractfilepath(paramstr(0))+_obj_dir+_PropFile;
+  UnwantedFile:=extractfilepath(paramstr(0))+_obj_dir+_UnwantedFile;
   progressbar1.Width:=Statusbar1.width-Statusbar1.Panels[0].width-60;
   cfg.FileHistory:=TFileHistory.Create;
   ma[0]:=MI_LastFiles;

@@ -15,7 +15,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  ComCtrls, ExtCtrls, StdCtrls, Menus,inifiles,commctrl;
+  ComCtrls, ExtCtrls, StdCtrls, Menus,inifiles,commctrl, ImgList;
 
 type
   TForm_DFMPalette = class(TForm)
@@ -134,10 +134,10 @@ begin
   imagelist1.clear;
   for i:=PageControl1.PageCount-1 downto 0 do
     PageControl1.Pages[i].free;
-  iFName:=extractfilepath(paramstr(0))+'images.bmp';
+  iFName:=extractfilepath(paramstr(0))+_obj_dir+'images.bmp';
   if FileExists(iFName) then
     loadimages(imagelist,iFName);
-  ini:=Tinifile.create(extractfilepath(paramstr(0))+'components.obj');
+  ini:=Tinifile.create(extractfilepath(paramstr(0))+_obj_dir+'components.obj');
   try
     sl:=TStringlist.create;
     try

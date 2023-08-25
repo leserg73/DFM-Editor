@@ -364,7 +364,7 @@ var sr:TSearchRec;
     i:integer;
 begin
   //load languages
-  findfirst(extractfilepath(paramstr(0))+lng_prefix+'*.lng',faAnyFile,sr);
+  findfirst(extractfilepath(paramstr(0))+lng_dir+lng_prefix+'*.lng',faAnyFile,sr);
   repeat
     if sr.name<>'' then
     begin
@@ -375,7 +375,7 @@ begin
   until findnext(sr)<>0;
   for i:=0 to Form_DFMOptions.CB_Language.Items.count-1 do
   begin
-    bname:= ExtractFilepath(paramstr(0))+lng_prefix+CB_Language.Items.Strings[i]+'.bmp';
+    bname:= ExtractFilepath(paramstr(0))+lng_dir+lng_prefix+CB_Language.Items.Strings[i]+'.bmp';
     if FileExists(bname) then
     begin
       b:=TBitmap.create;

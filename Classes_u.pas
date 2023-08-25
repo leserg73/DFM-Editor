@@ -67,8 +67,10 @@ const
   iiReplaceProp=12;
   
   lng_prefix='dfm_';
+  lng_dir='lang\';
 
   _ConfFile='dfmedit.ini';
+  _obj_dir='obj\';
   _CompFile='components.obj';
   _PropFile='properties.obj';
   _UnwantedFile='unwanted.obj';
