@@ -8,9 +8,7 @@
 
 Автономный редактор файлов форм Delphi (*.dfm) как в двоичном, так и в текстовом формате. Cовместим со всеми инструментами разработки Borland/Codegear/Embarcadero (Delphi, Builder, BDS, RAD).
 
-<p align="center">
 ![DFM-Editor-MainForm](https://github.com/leserg73/DFM-Editor/assets/67634778/e7ed6ec5-8f85-4ae7-912f-24b0c6b26ba7)
-</p>
 
 ## Особенности ##
 
