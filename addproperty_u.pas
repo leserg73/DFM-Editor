@@ -889,8 +889,10 @@ begin
     for i:=0 to openpicturedialog1.Files.Count-1 do
     begin
       bmp.LoadFromFile(openpicturedialog1.files.Strings[i]);
-      bmp.Width:=imagelist1.width;
-      bmp.height:=imagelist1.height;
+      //bmp.Width:=imagelist1.width;
+      //bmp.height:=imagelist1.height;
+      imagelist1.Width:=bmp.Width;
+      imagelist1.Height:=bmp.Width;
       imagelist1.AddMasked(bmp,bmp.canvas.pixels[0,0]);
     end;
     bmp.Free;
